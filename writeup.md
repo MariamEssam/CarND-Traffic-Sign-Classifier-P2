@@ -22,8 +22,11 @@ The data given is already separted so no need to split the data
 
 ## **Exploratory Visualization**
 In this section I tried to display a rabdom sign to see what will be explored 
+
 ![alt text][image1]
+
 Also I checked the distribution of the train as shown below and as a quick remark I had some of the train data repeat alot while others are really rare this distribution is not good......
+
 ![alt text][image2]
 
 ---
