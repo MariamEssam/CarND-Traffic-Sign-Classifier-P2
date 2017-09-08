@@ -103,12 +103,12 @@ My Model is composed of
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x1 Gray Scale Image   							| 
-| Convolution 3x3     	| 1x1 stride, **[Updated]**valid padding, outputs 28x28x6 	|
+| Convolution 3x3     	| 1x1 stride, **[Updated]** valid padding, outputs 28x28x6 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride, **[Updated]**valid padding,  outputs 14x14x6 				|
-| Convolution 3x3	    | 1x1 stride, **[Updated]**valid padding, outputs 10x10x16   	|
+| Max pooling	      	| 2x2 stride, **[Updated]** valid padding,  outputs 14x14x6 				|
+| Convolution 3x3	    | 1x1 stride, **[Updated]** valid padding, outputs 10x10x16   	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride, **[Updated]**valid padding,  outputs 5x5x16 				|
+| Max pooling	      	| 2x2 stride, **[Updated]** valid padding,  outputs 5x5x16 				|
 | Flatten layer	      | outputs 400 				|
 | Fully connected		|outputs 43     									|
 | Dropout				| rate=0.5 for training set and 1 for test/Valid set     |
@@ -132,7 +132,7 @@ The model is Saved in net.ckpt
 **Q:Test set accuracy of ?**
 
 93.7%
-**[Updated]** While the model accuracy during training stage is 95.5% while the value in the test is 93.7% this due to under fitting of the model so I think increasing number of Epoch with the same learning rate can be a good idea. 
+**[Updated]**  While the model accuracy during training stage is 95.5% while the value in the test is 93.7% this due to under fitting of the model so I think increasing number of Epoch with the same learning rate can be a good idea. 
 **Q:What was the first architecture that was tried and why was it chosen?**
 
 I have use ConvLeNet-5Layers 
@@ -157,7 +157,7 @@ Augment the train data size....learn the model on the rare signs
 Normalize the data.............better performance 
 
 ### **Test a Model on New Images**
-**[Updated]** Now I will try the model on a set of images I found on the web, the set I have found is different than the image the model learnt on it in the following:
+**[Updated]**  Now I will try the model on a set of images I found on the web, the set I have found is different than the image the model learnt on it in the following:
 1-The web image brightness is more than that I trained the model on
 2- The contrast between color is higher than that I used for training 
 3-Also the size of the sign itself is different, the sign I had represent 100% from the image no padding while the image I used contain padding(crop this padding can be a good idea to overcome this shortcoming)
@@ -186,7 +186,7 @@ That's how the model has seen them:
 ## **Predication**
 
 
-**[Updated]**My model looks very very certain from the results it had it give 1 for for the sign it has selected.
+**[Updated]** My model looks very very certain from the results it had it give 1 for for the sign it has selected.
 
 I really don't know if this mean the model is well trained or it overfit
 
