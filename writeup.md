@@ -102,3 +102,5 @@ My Model is composed of
 | Flatten layer	      | outputs 400 				|
 | Fully connected		|outputs 43     									|
 | Dropout				| rate=0.5 for training set and 1 for test/Valid set     |
+
+##### **Describe how you trained your mode**
