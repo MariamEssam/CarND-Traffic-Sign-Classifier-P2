@@ -158,9 +158,14 @@ Normalize the data.............better performance
 
 ### **Test a Model on New Images**
 **[Updated]**  Now I will try the model on a set of images I found on the web, the set I have found is different than the image the model learnt on it in the following:
+
 1-The web image brightness is more than that I trained the model on
+
 2- The contrast between color is higher than that I used for training 
+
 3-Also the size of the sign itself is different, the sign I had represent 100% from the image no padding while the image I used contain padding(crop this padding can be a good idea to overcome this shortcoming)
+
+These points can lead for missclassification....
 
 I have used the following images:
 
