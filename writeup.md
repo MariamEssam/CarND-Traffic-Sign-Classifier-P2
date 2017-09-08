@@ -49,6 +49,8 @@ For the preprocessing I have made the following:
 
 **Gray Scale Image**
 Convert the image to gray scale is useful to accelarate the processing of training and is make the accuracy bit higher.
-![alt text][image3]  ![alt text][image4]
+
+
+![alt text][image3]      ![alt text][image4]
 
 
