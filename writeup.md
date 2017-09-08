@@ -78,7 +78,9 @@ Randomly select a value to use it for shifting the image  and rotate it
 ** Normaization of the data**
 
 To normalize the data we use (pixels-128)/128
+
 I can see the mean of the train, valid and test set is:
+
 -0.318228855468
 -0.365025175968
 -0.353497899455
@@ -103,4 +105,4 @@ My Model is composed of
 | Fully connected		|outputs 43     									|
 | Dropout				| rate=0.5 for training set and 1 for test/Valid set     |
 
-##### **Describe how you trained your mode**
+**Describe how you trained your mode**
