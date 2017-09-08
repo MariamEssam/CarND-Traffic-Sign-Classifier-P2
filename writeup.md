@@ -10,6 +10,8 @@
 [image6]: ./writeupimages/30speedlimitnoise.png "Speed limit (30 km/h) With Noise"
 [image7]: ./writeupimages/30speedlimitdark.png "Speed limit (30 km/h) Darkness Increased"
 [image8]: ./writeupimages/30speedlimitbright.png "Speed limit (30 km/h) Brightness Increased"
+[image9]: ./germanTrafficSign/SelectedImages.png 
+
 
 ---
 
@@ -108,3 +110,50 @@ My Model is composed of
 | Dropout				| rate=0.5 for training set and 1 for test/Valid set     |
 
 **Q:Describe how you trained your mode**
+
+Optimizer used is Adam optimizer
+
+EPOCHS = 25
+
+BATCH_SIZE = 128
+
+Rate=0.0008
+
+The model is Saved in net.ckpt
+
+**Q:validation set accuracy of ?**
+
+95.5%
+
+**Q:Test set accuracy of ?**
+
+93.7%
+
+**Q:What was the first architecture that was tried and why was it chosen?**
+
+I have use ConvLeNet-5Layers 
+
+**Q:What were some problems with the initial architecture?**
+
+the problem is that the model overfit very fast
+
+**How was the architecture adjusted and why was it adjusted?**
+
+Reduce FC layers to one and add a dropout to avoid overfitting
+
+**Which parameters were tuned? How were they adjusted and why?**
+
+Learning rate is reduced to 0.0008 to improve the acuracy and Epoch is increased to 25 Epochs as using this value the accuracy increase without decrease back..
+
+**What are some of the important design choices and why were they chosen? **
+
+Reduce number of FC layers....Fix overfitting issue
+Add drop out....Fix overfitting issue
+Augment the train data size....learn the model on the rare signs
+Normalize the data.............better performance 
+
+### **Test a Model on New Images**
+
+I have used the following images:
+
+![alt text][image4]      ![alt text][image9]
