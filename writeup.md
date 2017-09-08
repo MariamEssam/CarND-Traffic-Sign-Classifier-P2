@@ -156,4 +156,4 @@ Normalize the data.............better performance
 
 I have used the following images:
 
-![alt text][image4]      ![alt text][image9]
+![alt text][image9]
