@@ -78,7 +78,10 @@ Randomly select a value to use it for shifting the image  and rotate it
 
 ![alt text][image4]      ![alt text][image7]
 
+
+
 ** Normaization of the data**
+
 
 To normalize the data we use (pixels-128)/128
 
@@ -181,8 +184,13 @@ That's how the model has seen them:
 | Speed limit 60     		| Speed limit 60      							|
 
 ## **Predication**
+
+
 [Updated]My model looks very very certain from the results it had it give 1 for for the sign it has selected.
+
 I really don't know if this mean the model is well trained or it overfit
+
+
 | Image			        |     Probability	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Road Work      		| 1   									| 
