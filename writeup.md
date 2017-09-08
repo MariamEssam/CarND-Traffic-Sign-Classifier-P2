@@ -39,6 +39,7 @@ Also I checked the distribution of the train as shown below and as a quick remar
 ---
 
 ## **Design and Test a Model Architecture**
+
 ### **Preprocessing**
 
 For the preprocessing I have made the following:
@@ -48,9 +49,62 @@ For the preprocessing I have made the following:
 
 
 **Gray Scale Image**
-Convert the image to gray scale is useful to accelarate the processing of training and is make the accuracy bit higher.
+
+Convert the image to gray scale is useful to accelarate the processing of training and to make the accuracy bit higher.
 
 
 ![alt text][image3]      ![alt text][image4]
 
+**Augment Data Size**
 
+As mentioned above the data distribution is not good some sign repeat alot while others not the same, here I tried to augment the data that does not repeat alot so I can have better distribution. To  Augment the data I have followed randomly one of the following ways:
+**1- Shift and Rotate the image**
+Randomly select a value to use it for shifting the image  and rotate it
+
+![alt text][image3]      ![alt text][image5]
+
+**2- Add Noise**
+
+![alt text][image4]      ![alt text][image6]
+
+**3- Increase Brigthness**
+
+![alt text][image4]      ![alt text][image8]
+
+**4- Increase Darkness**
+
+![alt text][image4]      ![alt text][image7]
+
+** Normaization of the data**
+
+To normalize the data we use (pixels-128)/128
+
+I can see the mean of the train, valid and test set is:
+
+-0.318228855468
+
+-0.365025175968
+
+-0.353497899455
+
+### **Model Architecture**
+
+In this part I have tried the same architecture used in the lessons *ConvLenet-5*, I compared this versus what I have seen the Yann paper I have just taken the idea of reduce the number of FC layers to one but I have not implemented exactly same model of Yann.
+
+My Model is composed of 
+
+
+| Layer         		|     Description	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Input         		| 32x32x1 Gray Scale Image   							| 
+| Convolution 3x3     	| 1x1 stride, same padding, outputs 28x28x6 	|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
+| Convolution 3x3	    | 1x1 stride, same padding, outputs 10x10x16   	|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
+| Flatten layer	      | outputs 400 				|
+| Fully connected		|outputs 43     									|
+| Dropout				| rate=0.5 for training set and 1 for test/Valid set     |
+
+**Q:Describe how you trained your mode**
