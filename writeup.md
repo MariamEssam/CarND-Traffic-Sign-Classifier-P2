@@ -86,7 +86,10 @@ I can see the mean of the train, valid and test set is:
 ### **Model Architecture**
 
 In this part I have tried the same architecture used in the lessons *ConvLenet-5*, I compared this versus what I have seen the Yann paper I have just taken the idea of reduce the number of FC layers to one but I have not implemented exactly same model of Yann.
+
 My Model is composed of 
+
+
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x1 Gray Scale Image   							| 
