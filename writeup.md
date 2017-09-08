@@ -80,7 +80,7 @@ Randomly select a value to use it for shifting the image  and rotate it
 
 
 
-** Normaization of the data**
+**Normaization of the data**
 
 
 To normalize the data we use (pixels-128)/128
@@ -149,7 +149,7 @@ Reduce FC layers to one and add a dropout to avoid overfitting
 
 Learning rate is reduced to 0.0008 to improve the acuracy and Epoch is increased to 25 Epochs as using this value the accuracy increase without decrease back..
 
-**What are some of the important design choices and why were they chosen? **
+**What are some of the important design choices and why were they chosen?**
 
 Reduce number of FC layers....Fix overfitting issue
 Add drop out....Fix overfitting issue
