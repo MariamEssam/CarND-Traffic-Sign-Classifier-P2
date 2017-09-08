@@ -48,9 +48,26 @@ For the preprocessing I have made the following:
 
 
 **Gray Scale Image**
-Convert the image to gray scale is useful to accelarate the processing of training and is make the accuracy bit higher.
+Convert the image to gray scale is useful to accelarate the processing of training and to make the accuracy bit higher.
 
 
 ![alt text][image3]      ![alt text][image4]
 
+**Augment Data Size**
+As mentioned above the data distribution is not good some sign repeat alot while others not the same, here I tried to augment the data that does not repeat alot so I can have better distribution. To  Augment the data I have followed randomly one of the following ways:
+**1- Shift and Rotate the image**
+Randomly select a value to use it for shifting the image  and rotate it
 
+![alt text][image3]      ![alt text][image5]
+
+**2- Add Noise**
+
+![alt text][image4]      ![alt text][image6]
+
+**3- Increase Brigthness**
+
+![alt text][image4]      ![alt text][image7]
+
+**4- Increase Darkness**
+
+![alt text][image4]      ![alt text][image8]
