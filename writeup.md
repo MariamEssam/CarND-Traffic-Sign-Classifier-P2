@@ -66,8 +66,8 @@ Randomly select a value to use it for shifting the image  and rotate it
 
 **3- Increase Brigthness**
 
-![alt text][image4]      ![alt text][image7]
+![alt text][image4]      ![alt text][image8]
 
 **4- Increase Darkness**
 
-![alt text][image4]      ![alt text][image8]
+![alt text][image4]      ![alt text][image7]
