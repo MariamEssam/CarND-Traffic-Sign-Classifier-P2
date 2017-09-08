@@ -11,6 +11,7 @@
 [image7]: ./writeupimages/30speedlimitdark.png "Speed limit (30 km/h) Darkness Increased"
 [image8]: ./writeupimages/30speedlimitbright.png "Speed limit (30 km/h) Brightness Increased"
 [image9]: ./writeupimages/SelectedImages.png 
+[image10]: ./writeupimages/selectedimageswithtitle.png 
 
 
 ---
@@ -157,3 +158,35 @@ Normalize the data.............better performance
 I have used the following images:
 
 ![alt text][image9]
+
+That's how the model has seen them:
+
+![alt text][image10]
+
+| Image			        |     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Road Work      		| Road Work   									| 
+|No  U-turn     			| Ahead only									|
+| children crossing					| children crossing											|
+| Keep Right      		| Keep Right 					 				|
+| No Vehicle		| No Vehicle      							|
+| Pedestrian		| Speed limit 70      							|
+| Stop		| Speed limit 60      							|
+| wildanimalscrossing		| Road Work     							|
+| No Entry	| No Entry     							|
+| Speed limit 60     		| Speed limit 60      							|
+
+## **Predication**
+
+| Image			        |     Probability	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Road Work      		| 1   									| 
+|No  U-turn     			| 1								|
+| children crossing					| 1											|
+| Keep Right      		| 1 					 				|
+| No Vehicle		| 1      							|
+| Pedestrian		| 1     							|
+| Stop		| 1    							|
+| wildanimalscrossing		| 1     							|
+| No Entry	| No Entry     							|
+| Speed limit 60     		| 1      							|
